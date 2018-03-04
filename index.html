@@ -1,11 +1,436 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Rentwell</title>
-</head>
-<body>
-  Marketing site
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Rentwell</title>
+    <meta name="description" content="Rentwell description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Main -->
+    <main class="main">
+
+      <!-- Top -->
+      <div class="topContainer">
+        <div class="topBg"></div>
+
+        <!-- Header -->
+        <div class="headerContainer">
+          <header class="header">
+
+            <a href="/" class="headerLogo" alt="Rentwell">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="currentColor" data-reactid="671"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              <strong>Rentwell</strong>
+              <small>Beta</small>
+            </a>
+
+            <nav class="headerNav">
+              <a href="/updates" class="headerNavLink">Updates</a>
+              <a href="/pricing" class="headerNavLink">Pricing</a>
+              <a href="/signup" class="headerNavButton">Try it free</a>
+            </nav>
+          </header>
+        </div>
+
+        <!-- Hero -->
+        <div class="heroContainer">
+          <div class="hero">
+
+            <!-- Hero Content -->
+            <div class="heroContent">
+              <h1 class="heroTitle">
+                Renting <span class="isHighlighted" id="isTyped"></span>,<br>made simple.
+              </h1>
+              <div class="heroSubtitle">
+                Rentwell helps you get a better overview of your resources, bookings and availabilities.
+              </div>
+              <div class="heroButtons">
+                <a href="/signup" class="heroButtonMain">Try it free</a>
+                <a href="/demo" class="heroButtonOutline">
+                  See an example
+                  <span class="heroButtonIcon">
+                    <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
+                      <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Hero Booking -->
+            <div class="heroBookingContainer">
+
+              <div class="heroBooking">
+
+                <!-- Hero Booking Header -->
+                <div class="heroBookingHeader">
+                  <div class="heroBookingTitle">RED Scarlet 4K</div>
+                  <div class="heroBookingSubtitle">Daily rent</div>
+                </div>
+
+                <!-- Hero Booking Body -->
+                <div class="heroBookingBody">
+
+                  <!-- Hero Booking Date -->
+                  <div class="heroBookingDate">
+
+                    <div class="heroBookingDateIcon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    </div>
+
+                    <div class="heroBookingDateRange">
+                      <div class="heroBookingDateFrom">
+                        <div class="heroBookingDateDate">Feb 24</div>
+                        <div class="heroBookingDateTime">9:30 am</div>
+                      </div>
+                      <div class="heroBookingDateArrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                      </div>
+                      <div class="heroBookingDateTo">
+                        <div class="heroBookingDateDate">Feb 27</div>
+                        <div class="heroBookingDateTime">5:00 pm</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="heroBookingActions">
+                    <div class="heroBookingButton">
+                      <span>Confirmed</span>
+                      <div class="heroBookingButtonIcon">
+                        <svg width="12" height="8" xmlns="http://www.w3.org/2000/svg">
+                          <path fill="currentColor" d="M11.67.33a1.125 1.125 0 0 0-1.59 0L5.993 4.416 1.92.344a1.124 1.124 0 1 0-1.59 1.59l4.862 4.863c.335.335.828.415 1.239.238a1.12 1.12 0 0 0 .37-.246l4.87-4.87c.439-.438.439-1.15 0-1.59z"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="heroBookingButton">
+                      <span>Partially paid</span>
+                      <div class="heroBookingButtonIcon">
+                        <svg width="12" height="8" xmlns="http://www.w3.org/2000/svg">
+                          <path fill="currentColor" d="M11.67.33a1.125 1.125 0 0 0-1.59 0L5.993 4.416 1.92.344a1.124 1.124 0 1 0-1.59 1.59l4.862 4.863c.335.335.828.415 1.239.238a1.12 1.12 0 0 0 .37-.246l4.87-4.87c.439-.438.439-1.15 0-1.59z"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="heroBookingClient">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" class="heroBookingClientAvatar">
+                    <div class="heroBookingClientName">Dennis Hanson</div>
+                    <div class="heroBookingClientIcon">
+                      <svg width="8" height="12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087L.344 10.08a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L1.919.328a1.125 1.125 0 0 0-1.59 0z"/>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="heroBookingBill">
+                    <div class="heroBookingBillLine">
+                      <div class="heroBookingBillLineName">RED Scarlet 4K</div>
+                      <div class="heroBookingBillLineValue">3 &times; $250.00</div>
+                    </div>
+                    <div class="heroBookingBillLine">
+                      <div class="heroBookingBillLineName">50mm Sigma lens</div>
+                      <div class="heroBookingBillLineValue">3 &times; $75.00</div>
+                    </div>
+                    <div class="heroBookingBillTotal">
+                      <div class="heroBookingBillTotalName">Total</div>
+                      <div class="heroBookingBillTotalValue">$975.00</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Overview -->
+      <div class="overviewContainer">
+        <h2 class="overviewTitle">Here's how Rentwell helps you with your rental business.</h2>
+        <div class="overviewSections">
+
+          <div class="overviewSection">
+            <div class="overviewSectionIcon isGreen">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="currentColor" data-reactid="231"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            </div>
+            <h3 class="overviewSectionTitle">
+              Show availability &amp; receive new bookings
+            </h3>
+            <div class="overviewSectionDescription">
+              Gain more sales by making your inventory availability visible to potential customers.
+            </div>
+            <a href="#" class="overviewSectionLink">
+              <span>Bookings</span>
+              <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
+                <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="overviewSection">
+            <div class="overviewSectionIcon isPurple">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="currentColor">
+                <path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/>
+              </svg>
+            </div>
+            <h3 class="overviewSectionTitle">
+              Clear overview of booking statuses
+            </h3>
+            <div class="overviewSectionDescription">
+              Gain more sales by making your inventory availability visible to potential customers.
+            </div>
+            <a href="#" class="overviewSectionLink">
+              <span>Managing</span>
+              <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
+                <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="overviewSection">
+            <div class="overviewSectionIcon isYellow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="currentColor">
+                <path d="M23 6l-9.5 9.5-5-5L1 18"/>
+                <path d="M17 6h6v6"/>
+              </svg>
+            </div>
+            <h3 class="overviewSectionTitle">
+              Insights into trends &amp; customer behaviours
+            </h3>
+            <div class="overviewSectionDescription">
+              Gain more sales by making your inventory availability visible to potential customers.
+            </div>
+            <a href="#" class="overviewSectionLink">
+              <span>Insights</span>
+              <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
+                <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gray Feature -->
+      <div class="grayFeatureContainer">
+        <div class="grayFeatureCenter">
+          <div class="grayFeatureContent">
+            <h2 class="grayFeatureTitle">Show availability &amp; receive new bookings</h2>
+            <div class="grayFeatureDescription">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sapien aliquam, congue ipsum id, commodo urna. Vestibulum ultricies pulvinar sem, at elementum felis vulputate sit amet. In vel eros est.</p>
+              <ul>
+                <li>Eu pulvinar libero malesuada eget</li>
+                <li>Nulla fermentum consequat</li>
+                <li>Ut imperdiet purus non</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grayFeatureVisual"></div>
+      </div>
+
+      <!-- Dark Blue Feature -->
+      <div class="darkBlueFeatureContainer">
+        <div class="darkBlueFeatureCenter">
+          <div class="darkBlueFeatureContent">
+            <h2 class="darkBlueFeatureTitle">Clear overview of booking statuses</h2>
+            <div class="darkBlueFeatureDescription">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sapien aliquam, congue ipsum id, commodo urna. Vestibulum ultricies pulvinar sem, at elementum felis vulputate sit amet. In vel eros est.</p>
+              <ul>
+                <li>Pellentesque dictum varius metus</li>
+                <li>Nulla fermentum consequat</li>
+                <li>Eu pulvinar libero malesuada eget</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blue Feature -->
+      <div class="blueFeatureContainer">
+        <div class="blueFeatureCenter">
+          <div class="blueFeatureContent">
+            <h2 class="blueFeatureTitle">Insights into trends &amp; customer behaviours</h2>
+            <div class="blueFeatureDescription">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sapien aliquam, congue ipsum id, commodo urna. Vestibulum ultricies pulvinar sem, at elementum felis vulputate sit amet. In vel eros est.</p>
+              <ul>
+                <li>Pellentesque dictum varius metus</li>
+                <li>Nulla fermentum consequat</li>
+                <li>Eu pulvinar libero malesuada eget</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Preview -->
+      <div class="previewContainer">
+
+        <div class="previewCenter">
+
+          <div class="previewVideo"></div>
+
+          <div class="previewContent">
+
+            <div class="previewOverview">
+              <div class="previewSubtitle">Lorem ipsum dolor sit amet</div>
+              <h2 class="previewTitle">Insights into trends &amp; customer behaviours</h2>
+            </div>
+
+            <div class="previewActions">
+              <a href="#" class="previewButtonMain">Try Rentwell for free</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footerContainer">
+        <div class="footerCenter">
+          <div class="footerRow">
+
+            <div class="footerColumn isWide">
+              <div class="footerColumnTitle">Usecases</div>
+              <div class="footerColumnContent">
+                <p>See how Rentwell can be useful to your business. Here are some examples.</p>
+
+                <div class="footerColumnLinkGroups">
+                  <div class="footerColumnLinkGroup">
+                    <a href="/updates" class="footerColumnLink">
+                      <span>Renting tech gear</span>
+                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
+                        <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
+                      </svg>
+                    </a>
+
+                    <a href="/updates" class="footerColumnLink">
+                      <span>Renting cars</span>
+                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
+                        <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
+                      </svg>
+                    </a>
+
+                    <a href="/updates" class="footerColumnLink">
+                      <span>Renting cars</span>
+                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
+                        <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div class="footerColumnLinkGroup">
+                    <a href="/updates" class="footerColumnLink">
+                      <span>Renting real-estate</span>
+                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
+                        <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
+                      </svg>
+                    </a>
+
+                    <a href="/updates" class="footerColumnLink">
+                      <span>Renting trips</span>
+                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
+                        <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
+                      </svg>
+                    </a>
+
+                    <a href="/updates" class="footerColumnLink">
+                      <span>Renting cars</span>
+                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
+                        <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footerColumn">
+              <div class="footerColumnTitle">Updates</div>
+              <div class="footerColumnContent">
+                <p>Stay up to date with our latest features</p>
+
+                <a href="/updates" class="footerColumnLink">
+                  <span>Latest updates</span>
+                  <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
+                    <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
+                  </svg>
+                </a>
+
+                <a href="https://twitter.com/rentwellapp" class="footerColumnLink">
+                  <span>Follow us on Twitter</span>
+                  <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
+                    <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="footerColumn">
+              <div class="footerColumnTitle">Contact</div>
+              <div class="footerColumnContent">
+                <p>Get in touch with any questions</p>
+
+                <a href="/updates" class="footerColumnLink">
+                  <span>(372) 55 888 36</span>
+                  <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
+                    <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
+                  </svg>
+                </a>
+
+                <a href="/updates" class="footerColumnLink">
+                  <span>hello@rentwell.co</span>
+                  <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
+                    <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="footerBottomRow">
+            <div>Rentwell &copy; 2018</div>
+            <div>Interested in partnerships? Get in touch at <a href="#">partners@rentwell.co</a></div>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+
+  </body>
 </html>
