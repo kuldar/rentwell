@@ -1,4 +1,4 @@
-*********/
+/**********/
 /*  Base  */
 /**********/
 
@@ -58,9 +58,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin: 0 auto;
   padding: 2rem 0;
   max-width: 60rem;
@@ -89,29 +86,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
-.headerNav {
-  display: flex;
-  align-items: center;
-}
-
-.headerNavLink {
-  margin: 0 0 0 2rem;
-  color: #B2D4FF;
-  font-size: 1.125rem;
-}
-
-.headerNavButton {
-  margin: 0 0 0 2rem;
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.25rem;
-  background-color: #ffffff;
-  box-shadow: 0 10px 15px -10px rgba(66,82,110,0.25);
-  color: #172B4D;
-  font-weight: bold;
-}
-
-.headerNavLink.isActive {}
-
 /* Hero */
 
 .heroContainer {
@@ -133,7 +107,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .heroTitle {
-  /* font-weight: bold; */
   margin: 0 0 2rem 0;
   color: #ffffff;
   font-size: 2.75rem;
@@ -141,25 +114,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .heroTitle
 .isHighlighted {
-  /* box-shadow: inset 0 -5px 0 0 rgba(255,255,255,0.5); */
   font-weight: bold;
 }
 
 .heroSubtitle {
-  max-width: 25rem;
   color: #B2D4FF;
   font-weight: 400;
   font-size: 1.5rem;
+  max-width: 25rem;
 }
 
-.heroButtons {
+.heroForm {
   display: flex;
-  align-items: flex-start;
   margin-top: 3rem;
+  padding: 1rem;
+  border: 1px solid #B2D4FF;
+  border-radius: 0.5rem;
 }
 
-.heroButtonMain {
-  margin-right: 1.5rem;
+.heroButton {
+  border: none;
+  transition: all .15s ease;
+  white-space: nowrap;
   padding: 0.75rem 1rem;
   border-radius: 0.325rem;
   background-color: #ffffff;
@@ -167,16 +143,25 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-.heroButtonOutline {
-  padding: 0.75rem 1rem;
-  border: 1px solid #B2D4FF;
-  border-radius: 0.325rem;
-  color: #ffffff;
-  font-weight: bold;
+.heroButton:hover {
+  transform: translateY(-1px);
 }
 
-.heroButtonIcon {
-  margin-left: 0.5rem;
+.heroButton:active {
+  transform: translateY(1px);
+}
+
+.heroInput {
+  flex: 1;
+  outline: none;
+  color: #ffffff;
+  background: transparent;
+  font-size: 1.25rem;
+  border: none;
+  padding-left: 0.5rem;
+}
+
+.heroInput::placeholder {
   color: #B2D4FF;
 }
 
@@ -198,6 +183,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0.75rem;
   box-shadow: 0 10px 50px -10px rgba(66,82,110,0.25);
   color: #172B4D;
+  cursor: default;
 }
 
 /* Hero Booking Header */
@@ -404,13 +390,18 @@ h1, h2, h3, h4, h5, h6 {
 .overviewSectionDescription p {}
 
 .overviewSectionLink {
-  display: block;
+  display: inline-block;
   margin: 1.5rem 0 0 0;
   color: #505F79;
 }
 
+.overviewSectionLink:hover svg {
+  margin-left: 0.5rem;
+}
+
 .overviewSectionLink span { font-weight: bold; }
 .overviewSectionLink svg {
+  transition: all .15s ease;
   margin-left: 0.25rem;
   color: #B3BAC5;
 }
@@ -483,6 +474,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ffffff;
   border-radius: 0.75rem 0 0 0;
   box-shadow: 0 10px 50px -10px rgba(66,82,110,0.25);
+  padding: 3rem;
+}
+
+.grayFeatureVisual img {
+  max-width: 500px;
 }
 
 /***********************/
@@ -490,7 +486,6 @@ h1, h2, h3, h4, h5, h6 {
 /***********************/
 
 .darkBlueFeatureContainer {
-  /* background-color: #0747A6; */
   background-color: #0052CC;
   color: #ffffff;
 }
@@ -501,6 +496,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 6rem 0;
   display: flex;
   justify-content: flex-end;
+}
+
+.darkBlueFeatureIllustration {
+  width: 50%;
+  padding: 0 5rem 0 0;
+}
+
+.darkBlueFeatureIllustration img  {
+  width: 100%;
 }
 
 .darkBlueFeatureContent {
@@ -562,6 +566,15 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: flex-end;
 }
 
+.blueFeatureIllustration {
+  width: 50%;
+  padding: 0 5rem 0 0;
+}
+
+.blueFeatureIllustration img  {
+  width: 100%;
+}
+
 .blueFeatureContent {
   width: 50%;
 }
@@ -603,62 +616,74 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.25rem 0 0.25rem 2.5rem;
 }
 
-/*************/
-/*  Preview  */
-/*************/
+/*********/
+/*  CTA  */
+/*********/
 
-.previewContainer {
+.ctaContainer {
   background-color: #091E42;
   box-shadow: inset 0 5rem 0 0 #0747A6;
   color: white;
+  padding-bottom: 5rem;
 }
 
-.previewCenter {
+.ctaCard {
   max-width: 60rem;
   margin: 0 auto;
-  padding: 0 0 5rem 0;
-}
-
-.previewVideo {
-  border-radius: 0.75rem;
-  height: 30rem;
-  background-color: #ffffff;
-  margin-bottom: 3rem;
-}
-
-.previewContent {
   display: flex;
+  align-items: center;
+  border-radius: 0.75rem;
+  background-color: #ffffff;
+  padding: 3rem;
 }
 
-.previewOverview {
-  width: 60%;
-}
-
-.previewSubtitle {
-  color: #8993A4;
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
+.ctaTitle {
   font-weight: bold;
+  color: #172B4D;
+  font-size: 1.75rem;
+  margin: 0;
 }
 
-.previewTitle {
-  font-weight: bold;
-  font-size: 2.25rem;
-}
-
-.previewActions {
+.ctaForm {
   flex: 1;
   display: flex;
+  padding: 1rem;
+  border: 1px solid #B3BAC5;
+  border-radius: 0.5rem;
 }
 
-.previewButtonMain {
-  margin: auto;
-  color: #172B4D;
+.ctaButton {
+  border: none;
+  transition: all .15s ease;
+  color: #ffffff;
+  white-space: nowrap;
   padding: 0.75rem 1rem;
   border-radius: 0.325rem;
-  background-color: #ffffff;
+  background-color: #0052CC;
   box-shadow: 0 10px 15px -10px rgba(66,82,110,0.25);
   font-weight: bold;
+}
+
+.ctaButton:hover {
+  transform: translateY(-1px);
+}
+
+.ctaButton:active {
+  transform: translateY(1px);
+}
+
+.ctaInput {
+  flex: 1;
+  outline: none;
+  color: #172B4D;
+  background: transparent;
+  font-size: 1.25rem;
+  border: none;
+  padding: 0 0.5rem;
+}
+
+.ctaInput::placeholder {
+  color: #B3BAC5;
 }
 
 /************/
@@ -677,58 +702,8 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 1px solid #344563;
 }
 
-.footerRow {
-  display: flex;
-  margin: 0 -2rem;
-}
-
-.footerColumn {
-  flex: 1;
-  margin: 0 2rem;
-}
-
-.footerColumn.isWide {
-  flex: 2;
-}
-
-.footerColumnTitle {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.footerColumnContent {
-  color: #8993A4;
-  font-size: 1.125rem;
-  margin-bottom: 0.75rem;
-}
-
-.footerColumnLinkGroups {
-  display: flex;
-  margin: 0 -1rem;
-}
-
-.footerColumnLinkGroup {
-  margin: 0 1rem;
-}
-
-.footerColumnLink {
-  display: block;
-  color: #ffffff;
-  padding: 0.25rem 0;
-}
-
-.footerColumnLink svg {
-  margin-left: 0.25rem;
-  color: #8993A4;
-}
-
 .footerBottomRow {
   color: #8993A4;
   display: flex;
   justify-content: space-between;
-  margin-top: 3rem;
-}
-
-.footerBottomRow a {
-  text-decoration: underline;
 }

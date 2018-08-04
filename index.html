@@ -29,11 +29,6 @@
               <small>Beta</small>
             </a>
 
-            <nav class="headerNav">
-              <a href="/updates" class="headerNavLink">Updates</a>
-              <a href="/pricing" class="headerNavLink">Pricing</a>
-              <a href="/signup" class="headerNavButton">Try it free</a>
-            </nav>
           </header>
         </div>
 
@@ -49,18 +44,16 @@
               <div class="heroSubtitle">
                 Rentwell helps you get a better overview of your resources, bookings and availabilities.
               </div>
-              <div class="heroButtons">
-                <a href="/signup" class="heroButtonMain">Try it free</a>
-                <a href="/demo" class="heroButtonOutline">
-                  See an example
-                  <span class="heroButtonIcon">
-                    <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
-                      <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
-                    </svg>
-                  </span>
-                </a>
-              </div>
+              <form
+                class="heroForm"
+                action="https://buttondown.email/api/emails/embed-subscribe/rentwell"
+                method="post"
+                target="popupwindow"
+                onsubmit="window.open('https://buttondown.email/rentwell', 'popupwindow')">
+                <input class="heroInput" type="email" name="email" id="bd-email" placeholder="Your email address">
+                <input type="hidden" value="1" name="embed"/>
+                <input class="heroButton" type="submit" value="Join the Beta" />
+              </form>
             </div>
 
             <!-- Hero Booking -->
@@ -230,25 +223,31 @@
             <div class="grayFeatureDescription">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sapien aliquam, congue ipsum id, commodo urna. Vestibulum ultricies pulvinar sem, at elementum felis vulputate sit amet. In vel eros est.</p>
               <ul>
-                <li>Eu pulvinar libero malesuada eget</li>
-                <li>Nulla fermentum consequat</li>
+                <li>Set a minimum scheduling notice</li>
+                <li>Add buffer time to avoid back-to-back bookings</li>
                 <li>Ut imperdiet purus non</li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="grayFeatureVisual"></div>
+        <div class="grayFeatureVisual">
+          <img src="img/planning.svg" />
+        </div>
       </div>
 
       <!-- Dark Blue Feature -->
       <div class="darkBlueFeatureContainer">
         <div class="darkBlueFeatureCenter">
+          <div class="darkBlueFeatureIllustration">
+            <img src="img/overview.svg" />
+          </div>
+
           <div class="darkBlueFeatureContent">
             <h2 class="darkBlueFeatureTitle">Clear overview of booking statuses</h2>
             <div class="darkBlueFeatureDescription">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sapien aliquam, congue ipsum id, commodo urna. Vestibulum ultricies pulvinar sem, at elementum felis vulputate sit amet. In vel eros est.</p>
               <ul>
-                <li>Pellentesque dictum varius metus</li>
+                <li>Accept bookings automatically or manually</li>
                 <li>Nulla fermentum consequat</li>
                 <li>Eu pulvinar libero malesuada eget</li>
               </ul>
@@ -260,6 +259,10 @@
       <!-- Blue Feature -->
       <div class="blueFeatureContainer">
         <div class="blueFeatureCenter">
+          <div class="blueFeatureIllustration">
+            <img src="img/insights.svg" />
+          </div>
+
           <div class="blueFeatureContent">
             <h2 class="blueFeatureTitle">Insights into trends &amp; customer behaviours</h2>
             <div class="blueFeatureDescription">
@@ -274,144 +277,29 @@
         </div>
       </div>
 
-      <!-- Preview -->
-      <div class="previewContainer">
-
-        <div class="previewCenter">
-
-          <div class="previewVideo"></div>
-
-          <div class="previewContent">
-
-            <div class="previewOverview">
-              <div class="previewSubtitle">Lorem ipsum dolor sit amet</div>
-              <h2 class="previewTitle">Insights into trends &amp; customer behaviours</h2>
-            </div>
-
-            <div class="previewActions">
-              <a href="#" class="previewButtonMain">Try Rentwell for free</a>
-            </div>
-
-          </div>
+      <!-- CTA -->
+      <div class="ctaContainer">
+        <div class="ctaCard">
+          <h2 class="ctaTitle">Insights into trends &amp; customer behaviours</h2>
+          <form
+            class="ctaForm"
+            action="https://buttondown.email/api/emails/embed-subscribe/rentwell"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/rentwell', 'popupwindow')">
+            <input class="ctaInput" type="email" name="email" id="bd-email" placeholder="Your email address">
+            <input type="hidden" value="1" name="embed"/>
+            <input class="ctaButton" type="submit" value="Join the Beta" />
+          </form>
         </div>
       </div>
 
       <!-- Footer -->
       <footer class="footerContainer">
         <div class="footerCenter">
-          <div class="footerRow">
-
-            <div class="footerColumn isWide">
-              <div class="footerColumnTitle">Usecases</div>
-              <div class="footerColumnContent">
-                <p>See how Rentwell can be useful to your business. Here are some examples.</p>
-
-                <div class="footerColumnLinkGroups">
-                  <div class="footerColumnLinkGroup">
-                    <a href="/updates" class="footerColumnLink">
-                      <span>Renting tech gear</span>
-                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
-                        <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
-                      </svg>
-                    </a>
-
-                    <a href="/updates" class="footerColumnLink">
-                      <span>Renting cars</span>
-                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
-                        <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
-                      </svg>
-                    </a>
-
-                    <a href="/updates" class="footerColumnLink">
-                      <span>Renting cars</span>
-                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
-                        <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
-                      </svg>
-                    </a>
-                  </div>
-
-                  <div class="footerColumnLinkGroup">
-                    <a href="/updates" class="footerColumnLink">
-                      <span>Renting real-estate</span>
-                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
-                        <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
-                      </svg>
-                    </a>
-
-                    <a href="/updates" class="footerColumnLink">
-                      <span>Renting trips</span>
-                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
-                        <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
-                      </svg>
-                    </a>
-
-                    <a href="/updates" class="footerColumnLink">
-                      <span>Renting cars</span>
-                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
-                        <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="footerColumn">
-              <div class="footerColumnTitle">Updates</div>
-              <div class="footerColumnContent">
-                <p>Stay up to date with our latest features</p>
-
-                <a href="/updates" class="footerColumnLink">
-                  <span>Latest updates</span>
-                  <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
-                    <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
-                  </svg>
-                </a>
-
-                <a href="https://twitter.com/rentwellapp" class="footerColumnLink">
-                  <span>Follow us on Twitter</span>
-                  <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
-                    <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <div class="footerColumn">
-              <div class="footerColumnTitle">Contact</div>
-              <div class="footerColumnContent">
-                <p>Get in touch with any questions</p>
-
-                <a href="/updates" class="footerColumnLink">
-                  <span>(372) 55 888 36</span>
-                  <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
-                    <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
-                  </svg>
-                </a>
-
-                <a href="/updates" class="footerColumnLink">
-                  <span>hello@rentwell.co</span>
-                  <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="currentColor" d="M5.33.33a1.125 1.125 0 0 0 0 1.59l4.087 4.087-4.073 4.073a1.124 1.124 0 1 0 1.59 1.59l4.863-4.862c.335-.335.415-.828.238-1.239a1.12 1.12 0 0 0-.246-.37L6.919.328a1.125 1.125 0 0 0-1.59 0z"/>
-                    <path fill="currentColor" d="M0 6a1 1 0 0 1 1-1h8a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1z"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-          </div>
           <div class="footerBottomRow">
             <div>Rentwell &copy; 2018</div>
-            <div>Interested in partnerships? Get in touch at <a href="#">partners@rentwell.co</a></div>
+            <div>Interested in partnerships? Get in touch at rentwellapp@gmail.com</div>
           </div>
         </div>
       </footer>
@@ -421,16 +309,6 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
     <script src="js/scripts.js"></script>
-
-    <!-- Google Analytics -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-    </script>
 
   </body>
 </html>
